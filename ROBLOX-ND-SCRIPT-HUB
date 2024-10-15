@@ -3,8 +3,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/n
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "ND ScriptHub"    .. Fluent.Version,
-    SubTitle = "by nikoleto bonnie",
+    Title = "ND ScriptHub‎ " ..Fluent.Version,
+    SubTitle = "by Nikoleto Scripts",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely (false recommended)
@@ -18,6 +18,7 @@ local Tabs = {
     Admin_Scripts = Window:AddTab({ Title = "Admin Scripts", Icon = "" }),
     Universal_Scripts = Window:AddTab({ Title = "Universal Scripts", Icon = ""}),
     Anti_Virus = Window:AddTab({ Title = "Anti Virus", Icon = "" }),
+    Extras = Window:AddTab({ Title = "Extras", icon = ""}),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -27,23 +28,23 @@ do
     Fluent:Notify({
         Title = "IMPORTANT NOTE",
         Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
-        SubContent = "e", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
+        SubContent = "Report bugs to me on discord: normalnikola", -- Optional
+        Duration = 30 -- Set to nil to make the notification not disappear
     })
 
 
 
-    Tabs.Game_Scripts:AddParagraph({
-        Title = "Game scripts (still in development)",
-        Content = "This is a paragraph.\nSecond line!"
-    })
+    --Tabs.Game_Scripts:AddParagraph({
+       --Title = "Game scripts (still in development)",
+        --Content = "This is a paragraph.\nSecond line!"
+    --})
 
 
 
     Tabs.Game_Scripts:AddButton({
         Title = "Breaking Plus+",
         Name = "BP+",
-        Description = "The best Breaking Point script",
+        Description = "The best Breaking Point script (Keyless)",
         Callback = function()
             Window:Dialog({
                 Title = "BP+",
@@ -73,7 +74,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "KP+",
-            Content = "Knife Ability Test",
+            Content = "Knife Ability Test (Keyless)",
             Buttons = {
                 {
                     Title = "Load script",
@@ -100,7 +101,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "Phantasm",
-            Content = "The Strongest Battlegrounds",
+            Content = "The Strongest Battlegrounds (Keyless)",
             Buttons = {
                 {
                     Title = "Load script",
@@ -121,18 +122,18 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "MacroV3 BSS script (with key)",
+    Title = "MacroV3 BSS script",
     Name = "MacroV3",
-    Description = "MOST UNDETECTABLE BeeconHub alternative Bee Swarm Simulator Script",
+    Description = "BEST UNDETECTED SCRIPT for Bee Swarm Simulator (key)",
     Callback = function()
         Window:Dialog({
             Title = "MacroV3",
-            Content = "The best alternative script to use instead of BeeconHub",
+            Content = "Join discord https://discord.gg/mv3 for Daily Key",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
+                        loadstring(game:HttpGet("https://www.macrov2-script.xyz/macrov3.lua"))()
                         print("Loaded MacroV3")
                     end
                 },
@@ -148,19 +149,73 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "BeeconHub BSS script",
-    Name = "BeeconHub",
-    Description = "The BEST Bee Swarm Simulator Script",
+    Title = "RIVALS cracked script",
+    Name = "RIVALS",
+    Description = "Best rivals script",
     Callback = function()
         Window:Dialog({
-            Title = "BeeconHub",
-            Content = "Note: there are reports of people saying that this script has gotten them banned so be careful while using it",
+            Title = "Rivals MS crack",
+            Content = "Fully Undetectable",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconBossScript/BeeSwarmSim/main/BeeSwarmSim"))()
-                        print("Loaded BeeconHub")
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Rivals_script/refs/heads/main/Rivals_script"))()
+                        print("Loaded Rivals MS cracked")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Universal_Scripts:AddButton({
+    Title = "FE Fling GUI",
+    Name = "FLINGgui",
+    Description = "Most popular Fling GUI (REMAKE)",
+    Callback = function()
+        Window:Dialog({
+            Title = "Yeet GUI REMAKE",
+            Content = "Best fling script",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fling-script/refs/heads/main/Fling"))()
+                        print("Loaded Fe Yeet Gui REMAKE")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Universal_Scripts:AddButton({
+    Title = "SwimFly GUI",
+    Name = "SwimFly",
+    Description = "FlyGuiV3 REMAKE",
+    Callback = function()
+        Window:Dialog({
+            Title = "Swim Fly",
+            Content = "This fly method is buggy and uses water so it will make water sounds",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/SwimFly-GUI/e2c48933f44656bc0c3cde7cbb224421e09fa1ba/SwimFly-GUI"))()
+                        print("Loaded SwimFly GUI")
                     end
                 },
                 {
@@ -229,19 +284,19 @@ Tabs.Admin_Scripts:AddButton({
 })
 
 Tabs.Admin_Scripts:AddButton({
-    Title = "Fates-Admin",
-    Name = "Fates-Admin",
+    Title = "Fate's Admin",
+    Name = "Fate's Admin",
     Description = "",
     Callback = function()
         Window:Dialog({
-            Title = "Fates-Admin",
+            Title = "Fate's Admin",
             Content = "Universal Admin",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
-                        print("Loaded ")
+                        print("Loaded Fate's Admin")
                     end
                 },
                 {
@@ -268,7 +323,7 @@ Tabs.Admin_Scripts:AddButton({
                     Title = "Load script",
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
-                        print("Loaded ")
+                        print("Loaded SystemBroken")
                     end
                 },
                 {
@@ -295,7 +350,7 @@ Tabs.Anti_Virus:AddButton({
                     Title = "Load script",
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/GalacticHypernova/Guardian/main/MainProd"))()
-                        print("Loaded ")
+                        print("Loaded Guardian V2 anti-virus")
                     end
                 },
                 {
@@ -321,8 +376,8 @@ Tabs.Universal_Scripts:AddButton({
                 {
                     Title = "Load script",
                     Callback = function()
-                        loadstring(game:Httpget("https://raw.githubusercontent.com/nikoladhima/Energizer-GUI/refs/heads/main/FEanimationsR6-R15"))()
-                        print("Loaded ")
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Energizer-GUI/refs/heads/main/FEanimationsR6-R15"))()
+                        print("Loaded Energizer GUI ")
                     end
                 },
                 {
@@ -336,7 +391,7 @@ Tabs.Universal_Scripts:AddButton({
     end
 })
 
-    local Toggle = Tabs.Game_Scripts:AddToggle("MyToggle", {Title = "Toggle", Default = false })
+    --[[local Toggle = Tabs.Game_Scripts:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
     Toggle:OnChanged(function()
         print("Toggle changed:", Options.MyToggle.Value)
@@ -402,10 +457,64 @@ Tabs.Universal_Scripts:AddButton({
         end
         print("Mutlidropdown changed:", table.concat(Values, ", "))
     end)
+    ]]
 
 
+    Tabs.Extras:AddButton({
+        Title = "UNC Test",
+        Name = "UNC Test",
+        Description = "Test your executor's UNC",
+        Callback = function()
+            Window:Dialog({
+                Title = "UNC Test",
+                Content = "Fun fact: Most executors fake their UNC 💀",
+                Buttons = {
+                    {
+                        Title = "Load script",
+                        Callback = function()
+                            print("Testing UNC..")
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/UNC/refs/heads/main/UNC-test"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled")
+                        end
+                    }
+                }
+            })
+        end
+    })
 
-    local Colorpicker = Tabs.Game_Scripts:AddColorpicker("Colorpicker", {
+    Tabs.Extras:AddButton({
+        Title = "Grab Tools",
+        Name = "Grab Tools",
+        Description = "Gets all Tools from Lighting",
+        Callback = function()
+            Window:Dialog({
+                Title = "Copy tools from Lighting",
+                Content = "Client sided, wont work on games that dont have tools in Lighting",
+                Buttons = {
+                    {
+                        Title = "Load script",
+                        Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/getTools/refs/heads/main/Grab-Tools"))()    
+                            print("Copied all tools from Lighting")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    local Colorpicker = Tabs.Extras:AddColorpicker("Colorpicker", {
         Title = "Colorpicker",
         Default = Color3.fromRGB(96, 205, 255)
     })
@@ -418,7 +527,7 @@ Tabs.Universal_Scripts:AddButton({
 
 
 
-    local TColorpicker = Tabs.Game_Scripts:AddColorpicker("TransparencyColorpicker", {
+    local TColorpicker = Tabs.Extras:AddColorpicker("TransparencyColorpicker", {
         Title = "Colorpicker",
         Description = "but you can change the transparency.",
         Transparency = 0,
@@ -434,7 +543,7 @@ Tabs.Universal_Scripts:AddButton({
 
 
 
-    local Keybind = Tabs.Game_Scripts:AddKeybind("Keybind", {
+    --[[local Keybind = Tabs.Game_Scripts:AddKeybind("Keybind", {
         Title = "KeyBind",
         Mode = "Toggle", -- Always, Toggle, Hold
         Default = "LeftControl", -- String as the name of the keybind (MB1, MB2 for mouse buttons)
@@ -491,7 +600,7 @@ Tabs.Universal_Scripts:AddButton({
     Input:OnChanged(function()
         print("Input updated:", Input.Value)
     end)
-end
+end]]
 
 
 -- Addons:
@@ -532,5 +641,16 @@ Fluent:Notify({
 SaveManager:LoadAutoloadConfig()
 
 task.wait(25)
+local virtualUser = game:GetService('VirtualUser')
+local players = game:GetService('Players')
+local player = players.LocalPlayer
 
-print()
+game:GetService('Players').LocalPlayer.Idled:Connect(function()
+   virtualUser:CaptureController()
+   virtualUser:ClickButton2(Vector2.new())
+   print('anti-afk triggered')
+end)
+print("Loaded Built-in Anti-AFK")
+end
+
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
