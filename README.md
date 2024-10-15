@@ -1,7 +1,7 @@
 ## Script Thumbnail
 <img src="Assets/Screenshot_15.png" alt="ND Script Hub">
 
-## THIS SCRIPT IS STILL IN DEVELOPMENT SO IT WONT HAVE THAT MANY SCRIPTS!
+## NOTE: THIS SCRIPT IS STILL IN DEVELOPMENT SO IT WONT HAVE THAT MANY SCRIPTS!
 
 ## ⚡ Features
 
