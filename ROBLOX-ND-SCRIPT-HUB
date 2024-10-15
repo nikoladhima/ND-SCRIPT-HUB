@@ -24,20 +24,22 @@ local Tabs = {
 
 local Options = Fluent.Options
 
-do
+--[[do
     Fluent:Notify({
         Title = "IMPORTANT NOTE",
         Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
         SubContent = "Report bugs to me on discord: normalnikola", -- Optional
         Duration = 30 -- Set to nil to make the notification not disappear
     })
+        ]]
 
 
 
-    --Tabs.Game_Scripts:AddParagraph({
-       --Title = "Game scripts (still in development)",
-        --Content = "This is a paragraph.\nSecond line!"
+    --[[Tabs.Game_Scripts:AddParagraph({
+       Title = "Game scripts (still in development)",
+        Content = "This is a paragraph.\nSecond line!"
     --})
+    ]]
 
 
 
@@ -494,7 +496,7 @@ Tabs.Universal_Scripts:AddButton({
         Callback = function()
             Window:Dialog({
                 Title = "Copy tools from Lighting",
-                Content = "Client sided, wont work on games that dont have tools in Lighting",
+                Content = "Wont work on games that dont have tools in Lighting (Client Sided)",
                 Buttons = {
                     {
                         Title = "Load script",
@@ -513,6 +515,34 @@ Tabs.Universal_Scripts:AddButton({
             })
         end
     })
+
+    Tabs.Extras:AddButton({
+        Title = "TP tool",
+        Name = "TP tool",
+        Description = "Use the tool to teleport anywhere you click",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/TP/refs/heads/main/tptool"))()
+        end
+    })
+
+    Tabs.Extras:AddButton({
+        Title = "Clear Inventory",
+        Name = "Clear Inventory",
+        Description = "Clears your whole inventory",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/CI/refs/heads/main/Clear-Inventory"))()
+    end
+    })
+
+   --[[local Toggle = Tabs.Game_Scripts:AddToggle("MyToggle", {Title = "Toggle", Default = false })
+
+    Toggle:OnChanged(function()
+
+
+    end)
+
+    Options.MyToggle:SetValue(false)]]
+    
 
     local Colorpicker = Tabs.Extras:AddColorpicker("Colorpicker", {
         Title = "Colorpicker",
@@ -540,7 +570,6 @@ Tabs.Universal_Scripts:AddButton({
             "Transparency:", TColorpicker.Transparency
         )
     end)
-
 
 
     --[[local Keybind = Tabs.Game_Scripts:AddKeybind("Keybind", {
@@ -640,7 +669,7 @@ Fluent:Notify({
 -- which has been marked to be one that auto loads!
 SaveManager:LoadAutoloadConfig()
 
-task.wait(25)
+task.wait(15)
 local virtualUser = game:GetService('VirtualUser')
 local players = game:GetService('Players')
 local player = players.LocalPlayer
@@ -651,6 +680,5 @@ game:GetService('Players').LocalPlayer.Idled:Connect(function()
    print('anti-afk triggered')
 end)
 print("Loaded Built-in Anti-AFK")
-end
 
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
