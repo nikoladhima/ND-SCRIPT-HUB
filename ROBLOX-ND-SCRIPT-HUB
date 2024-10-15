@@ -23,15 +23,15 @@ local Tabs = {
 }
 
 local Options = Fluent.Options
-
---[[do
+--do
     Fluent:Notify({
         Title = "IMPORTANT NOTE",
-        Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
-        SubContent = "Report bugs to me on discord: normalnikola", -- Optional
-        Duration = 30 -- Set to nil to make the notification not disappear
+        Content = "If you found any bugs or have issues with the script then contact me on discord: normalnikola",
+        --Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
+        --SubContent = "Report bugs to me on discord: normalnikola", -- Optional
+        Duration = 10 -- Set to nil to make the notification not disappear
     })
-        ]]
+        
 
 
 
