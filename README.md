@@ -1,27 +1,17 @@
-<img src="logodark.png#gh-dark-mode-only" alt="fluent">
-<img src="logolight.png#gh-light-mode-only" alt="fluent">
+## Script Thumbnail
+<img src="Assets/Screenshot_15.png" alt="ND Script Hub">
 
 ## ⚡ Features
 
-- Modern design
-- Many customization options
-- Almost any UI Element you would ever need 
+- Game Scripts
+- Universal Scripts
+- Admin Scripts
+- Built-in ANTI-AFK
+- Anti-Virus which prevents scripts from executing malicious code to steal your info
 <br/>
 
-## 🔌 Installation
-
-You can load Fluent through a GitHub Release:
-
+##🔌Shortened Script
 ```lua
-local Fluent = loadstring(game:HttpGet("https://github.com/nikoladhima/Fluent/releases/latest/download/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
 ```
 <br/>
-
-## 📜 Usage
-
-[Example Script](https://github.com/nikoladhima/Fluent/blob/master/Example.lua)
-<br/>
-
-## Credits
-
-Nikoleto Scripts (Me frfr)
