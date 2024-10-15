@@ -3,11 +3,12 @@
 
 ## ⚡ Features
 
-- Game Scripts
-- Universal Scripts
-- Admin Scripts
-- Built-in ANTI-AFK
-- Anti-Virus which prevents scripts from executing malicious code to steal your info
+- Game Scripts 📜
+- Universal Scripts 📜
+- Admin Scripts 📜
+- Built-in ANTI-AFK ⌨️
+- Anti-Virus which prevents scripts from executing malicious code to steal your info ⚠️
+- Extras 👀
 <br/>
 
 ## 🔌Shortened Script
