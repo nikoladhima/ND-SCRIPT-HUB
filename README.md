@@ -11,14 +11,14 @@
 - Built-in ANTI-AFK ⌨️
 - Anti-Virus which prevents scripts from executing malicious code to steal your info ⚠️
 - Extras 👀
-<br/>
+
 ## Patch Notes (Script V.1.2.0)
 
 - Added Icons to Tabs
 - Da Hood, Doors, MM2 and Chat Bypass Script added
 - Added Built-In ANTI-AFK
 - Added more features to Extras Tab
-
+<br/>
 ## 🔌Shortened Script
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
