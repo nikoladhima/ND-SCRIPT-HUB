@@ -346,14 +346,14 @@ Tabs.Universal_Scripts:AddButton({
     Description = "Chat bypasser (key system)",
     Callback = function()
         Window:Dialog({
-            Title = "Swim Fly",
-            Content = "This fly method is buggy and uses water so it will make water sounds",
+            Title = "Best Chat Bypasser",
+            Content = "This is a fixed version of UserCreation",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/UserCreation.lua", true))()
-                        print("Loaded UserCreatiom chat bypass")
+                        print("Loaded UserCreation chat bypass")
                     end
                 },
                 {
