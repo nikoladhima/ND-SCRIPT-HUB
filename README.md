@@ -13,10 +13,12 @@
 - Extras 👀
 <br/>
 ## Patch Notes (Script V.1.2.0)
+
 - Added Icons to Tabs
 - Da Hood, Doors, MM2 and Chat Bypass Script added
 - Added Built-In ANTI-AFK
 - Added more features to Extras Tab
+- 
 ## 🔌Shortened Script
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
