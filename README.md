@@ -9,7 +9,7 @@
 - Universal Scripts 📜
 - Admin Scripts 📜
 - Built-in ANTI-AFK ⌨️
-- Anti-Virus which prevents scripts from executing malicious code to steal your info ⚠️
+- Anti-Virus ⚠️
 - Extras 👀
 
 ## Patch Notes (Script V.1.2.0)
