@@ -5,7 +5,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/n
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "ND ScriptHub‎ 1.2.0", --..Fluent.Version,
+    Title = "ND ScriptHub‎ V.1.2.0", --..Fluent.Version,
     SubTitle = "by Nikoleto Scripts ||| https://github.com/nikoladhima",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
