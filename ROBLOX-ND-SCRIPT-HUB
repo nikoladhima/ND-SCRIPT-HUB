@@ -1,10 +1,12 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/refs/heads/master/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "ND ScriptHub‎ " ..Fluent.Version,
-    SubTitle = "by Nikoleto Scripts",
+    Title = "ND ScriptHub‎ 1.2.0", --..Fluent.Version,
+    SubTitle = "by Nikoleto Scripts ||| https://github.com/nikoladhima",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely (false recommended)
@@ -14,11 +16,11 @@ local Window = Fluent:CreateWindow({
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-    Game_Scripts = Window:AddTab({ Title = "Game Scripts", Icon = "" }),
-    Admin_Scripts = Window:AddTab({ Title = "Admin Scripts", Icon = "" }),
-    Universal_Scripts = Window:AddTab({ Title = "Universal Scripts", Icon = ""}),
-    Anti_Virus = Window:AddTab({ Title = "Anti Virus", Icon = "" }),
-    Extras = Window:AddTab({ Title = "Extras", icon = ""}),
+    Game_Scripts = Window:AddTab({ Title = "Game Scripts", Icon = "rbxassetid://83262328821985" }),
+    Admin_Scripts = Window:AddTab({ Title = "Admin Scripts", Icon = "rbxassetid://83262328821985" }),
+    Universal_Scripts = Window:AddTab({ Title = "Universal Scripts", Icon = "rbxassetid://83262328821985"}),
+    Anti_Virus = Window:AddTab({ Title = "Anti Virus", Icon = "rbxassetid://119124462913986" }),
+    Extras = Window:AddTab({ Title = "Extras", Icon = "rbxassetid://97974676819697"}),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -26,9 +28,9 @@ local Options = Fluent.Options
 --do
     Fluent:Notify({
         Title = "IMPORTANT NOTE",
-        Content = "If you found any bugs or have issues with the script then contact me on discord: normalnikola",
+        Content = "If you find any bugs or have issues with the script then contact me on discord: normalnikola",
         --Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
-        --SubContent = "Report bugs to me on discord: normalnikola", -- Optional
+        SubContent = "", -- Optional
         Duration = 10 -- Set to nil to make the notification not disappear
     })
         
@@ -41,12 +43,38 @@ local Options = Fluent.Options
     --})
     ]]
 
-
+    function GetShortenedPlrFromName(name)
+        name = string.lower(tostring(name))
+     
+        if not game:GetService("Players"):FindFirstChild("me") and name == "me" or game:GetService("Players"):FindFirstChild("me") and game:GetService("Players"):FindFirstChild("me").ClassName ~= "Player" and name == "me" then
+            return {LocalPlayer}
+        end
+        if not game:GetService("Players"):FindFirstChild("all") and name == "all" or game:GetService("Players"):FindFirstChild("all") and game:GetService("Players"):FindFirstChild("all").ClassName ~= "Player" and name == "all" then
+            return game:GetService("Players"):GetPlayers()
+        end
+        if not game:GetService("Players"):FindFirstChild("others") and name == "others" or game:GetService("Players"):FindFirstChild("others") and game:GetService("Players"):FindFirstChild("others").ClassName ~= "Player" and name == "others" then
+            name = game:GetService("Players"):GetPlayers()
+            for i, v in pairs(name) do
+                if v == LocalPlayer then
+                    table.remove(name, i)
+                end
+            end
+            return name
+        end
+     
+        for i, v in pairs(game.Players:GetPlayers()) do
+            if string.lower(string.sub(v.DisplayName, 1, #name)) == name or string.lower(string.sub(v.Name, 1, #name)) == name then
+                return {v}
+            end
+        end
+     
+        return nil
+    end
 
     Tabs.Game_Scripts:AddButton({
         Title = "Breaking Plus+",
         Name = "BP+",
-        Description = "The best Breaking Point script (Keyless)",
+        Description = "The best Breaking Point script",
         Callback = function()
             Window:Dialog({
                 Title = "BP+",
@@ -76,7 +104,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "KP+",
-            Content = "Knife Ability Test (Keyless)",
+            Content = "Knife Ability Test",
             Buttons = {
                 {
                     Title = "Load script",
@@ -126,7 +154,7 @@ Tabs.Game_Scripts:AddButton({
 Tabs.Game_Scripts:AddButton({
     Title = "MacroV3 BSS script",
     Name = "MacroV3",
-    Description = "BEST UNDETECTED SCRIPT for Bee Swarm Simulator (key)",
+    Description = "BEST UNDETECTED SCRIPT for Bee Swarm Simulator (key system)",
     Callback = function()
         Window:Dialog({
             Title = "MacroV3",
@@ -164,6 +192,87 @@ Tabs.Game_Scripts:AddButton({
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Rivals_script/refs/heads/main/Rivals_script"))()
                         print("Loaded Rivals MS cracked")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "SwagMode",
+    Name = "SwagMode",
+    Description = "The best Da Hood Script",
+    Callback = function()
+        Window:Dialog({
+            Title = "SwagMode Free Version",
+            Content = "SwagMode premium users will be able to abuse powerful premium commands on you",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://rawscripts.net/raw/Da-Hood-swagmode-source-4535"))()
+                        print("Loaded SwagMode")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Doors Script",
+    Name = "Doors Script",
+    Description = "The best Doors Script",
+    Callback = function()
+        Window:Dialog({
+            Title = "Black King |REMAKE|",
+            Content = "Abuse this script",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
+                        print("Loaded Black King")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Murder Mystery 2",
+    Name = "Murder Mystery 2",
+    Description = "Some pc executors may experience issues with this script",
+    Callback = function()
+        Window:Dialog({
+            Title = "EclipseMM2",
+            Content = "Known to be the best script for MM2",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))() 
+                        print("Loaded EclipseMM2")
                     end
                 },
                 {
@@ -218,6 +327,33 @@ Tabs.Universal_Scripts:AddButton({
                     Callback = function()
                         loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/SwimFly-GUI/e2c48933f44656bc0c3cde7cbb224421e09fa1ba/SwimFly-GUI"))()
                         print("Loaded SwimFly GUI")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Universal_Scripts:AddButton({
+    Title = "UserCreationFIX",
+    Name = "UserCreationFIX",
+    Description = "Chat bypasser (key system)",
+    Callback = function()
+        Window:Dialog({
+            Title = "Swim Fly",
+            Content = "This fly method is buggy and uses water so it will make water sounds",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/UserCreation.lua", true))()
+                        print("Loaded UserCreatiom chat bypass")
                     end
                 },
                 {
@@ -342,11 +478,11 @@ Tabs.Admin_Scripts:AddButton({
 Tabs.Anti_Virus:AddButton({
     Title = "Guardian V2",
     Name = "Guardian V2",
-    Description = "Protects you from roblox malicious scripts (grabbers, robux stealers, etc",
+    Description = "Use at your own risk",
     Callback = function()
         Window:Dialog({
-            Title = "Anti-Virus",
-            Content = "Guardian V2",
+            Title = "Guardian V2",
+            Content = "This script apparently protects you from roblox malicious scripts ⚠️USE AT YOUR OWN RISK⚠️",
             Buttons = {
                 {
                     Title = "Load script",
@@ -534,6 +670,36 @@ Tabs.Universal_Scripts:AddButton({
     end
     })
 
+    Tabs.Extras:AddButton({
+        Title = "Reset",
+        Name = "Reset",
+        Description = "Resets your character",
+        Callback = function()
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    })
+
+    local Input = Tabs.Extras:AddInput("Input", {
+        Title = "TP to player",
+        Default = "",
+        Placeholder = "username",
+        Numeric = false, -- Only allows numbers
+        Finished = true, -- Only calls callback when you press enter
+        Callback = function(Value)
+            for i,Player in GetShortenedPlrFromName(Value) do
+                if Player.Character.HumanoidRootPart ~= nil then 
+                    print("Teleported to", Player.DisplayName)
+                LocalPlayer.Character.HumanoidRootPart.CFrame = Player.Character.HumanoidRootPart.CFrame
+                end
+                end
+        end
+    })
+
+    --[[Input:OnChanged(function()
+        print("Input updated:", Input.Value)
+    end)
+    ]]
+
    --[[local Toggle = Tabs.Game_Scripts:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
     Toggle:OnChanged(function()
@@ -659,11 +825,12 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 Window:SelectTab(1)
 
-Fluent:Notify({
+--[[Fluent:Notify({
     Title = "Fluent",
     Content = "The script has been loaded.",
     Duration = 8
 })
+ ]]
 
 -- You can use the SaveManager:LoadAutoloadConfig() to load a config
 -- which has been marked to be one that auto loads!
