@@ -18,7 +18,7 @@
 - Da Hood, Doors, MM2 and Chat Bypass Script added
 - Added Built-In ANTI-AFK
 - Added more features to Extras Tab
-<br/>
+
 ## 🔌Shortened Script
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ND-SCRIPT-HUB/refs/heads/main/ROBLOX-ND-SCRIPT-HUB"))()
