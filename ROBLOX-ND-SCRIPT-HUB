@@ -5,7 +5,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/n
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "ND ScriptHub‎ V.1.2.0", --..Fluent.Version,
+    Title = "ND ScriptHub‎ V.1.2.1", --..Fluent.Version,
     SubTitle = "by Nikoleto Scripts ||| https://github.com/nikoladhima",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -337,7 +337,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "AtherHub",
-            Content = "Unfortunately not supported on Solara",
+            Content = "OP autofarm features",
             Buttons = {
                 {
                     Title = "Load script",
@@ -385,19 +385,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Arsenal",
+    Name = "Arsenal",
+    Description = "The best script for Arsenal",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "Tbao Hub",
+            Content = "OP undetected features",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+                        print("Loaded TbaoHub")
                     end
                 },
                 {
@@ -412,19 +412,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Build a boat for treasure",
+    Name = "Build a boat for treasure",
+    Description = "Extremely OP/BROKEN features",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "ZeeroxHub",
+            Content = "Undetected BABFT script",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+                        print("Loaded ZeeroxHub")
                     end
                 },
                 {
@@ -439,19 +439,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Fling Things And People",
+    Name = "Fling Things And People",
+    Description = "Take people to heaven",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "FTAP script",
+            Content = "Take people to hell",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/BlizTBr/scripts/main/FTAP.lua"))()
+                        print("Loaded FTAP")
                     end
                 },
                 {
@@ -466,19 +466,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Funky Friday",
+    Name = "Funky Friday",
+    Description = "Undetected features",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "FNF player",
+            Content = "OP autoplayer",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet('https://pastebin.com/raw/dcyuEgyK'))()
+                        print("Loaded FNF script")
                     end
                 },
                 {
@@ -493,19 +493,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Combat Warriors",
+    Name = "Combat Warriors",
+    Description = "The best CW script with undetected features",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "Stratos Hub",
+            Content = "OP auto-parry and anti-parry",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet("https://scriptblox.com/raw/Combat-Warriors-Stratos-Hub-17601"))()
+                        print("Loaded Stratos Hub")
                     end
                 },
                 {
@@ -520,19 +520,19 @@ Tabs.Game_Scripts:AddButton({
 })
 
 Tabs.Game_Scripts:AddButton({
-    Title = "",
-    Name = "",
-    Description = "",
+    Title = "Adopt Me",
+    Name = "Adopt Me",
+    Description = "Undetected features with OP autofarm(s)",
     Callback = function()
         Window:Dialog({
-            Title = "",
-            Content = "",
+            Title = "JulHub",
+            Content = "Who even plays this game anymore bro :skull:",
             Buttons = {
                 {
                     Title = "Load script",
                     Callback = function()
-                        
-                        print("Loaded ")
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
+                        print("Loaded JulHub")
                     end
                 },
                 {
