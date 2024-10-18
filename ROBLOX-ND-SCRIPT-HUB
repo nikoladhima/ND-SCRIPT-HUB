@@ -239,7 +239,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "Black King |REMAKE|",
-            Content = "Abuse this script",
+            Content = "OP undetected features",
             Buttons = {
                 {
                     Title = "Load script",
