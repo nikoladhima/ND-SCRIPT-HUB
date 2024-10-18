@@ -1,7 +1,7 @@
 ## Script Thumbnail
 <img src="Assets/Screenshot_15.png" alt="ND Script Hub">
 
-## NOTE: THIS SCRIPT HUB IS STILL IN DEVELOPMENT SO IT DOESN'T HAVE MANY SCRIPTS!
+## NOTE: THIS SCRIPT HUB IS STILL IN DEVELOPMENT SO IT DOESN'T HAVE MANY SCRIPTS YET!
 
 ## ⚡ Features
 
@@ -12,12 +12,12 @@
 - Anti-Virus ⚠️
 - Extras 👀
 
-## Patch Notes (Script V.1.2.0)
+## Patch Notes (Script V.1.2.2)
 
-- Added Icons to Tabs
-- Da Hood, Doors, MM2 and Chat Bypass Script added
-- Added Built-In ANTI-AFK
-- Added more features to Extras Tab
+- Updated some scripts
+- Bug Fixes
+- ↓↓ New game scripts added ↓↓
+- Bedwars, Escape Papa's Pizzaria, Pet's go, Dress To Impress, Arsenal, Build a boat for treasure, Fling Things And People, Funky Friday, Combat Warriors, Adopt Me
 
 ## 🔌Shortened Script
 ```lua
