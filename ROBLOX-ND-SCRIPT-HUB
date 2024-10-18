@@ -131,7 +131,7 @@ Tabs.Game_Scripts:AddButton({
     Callback = function()
         Window:Dialog({
             Title = "Phantasm",
-            Content = "The Strongest Battlegrounds (Keyless)",
+            Content = "The Strongest Battlegrounds",
             Buttons = {
                 {
                     Title = "Load script",
@@ -273,6 +273,266 @@ Tabs.Game_Scripts:AddButton({
                     Callback = function()
                         loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))() 
                         print("Loaded EclipseMM2")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Bedwars",
+    Name = "Bedwars",
+    Description = "The best bedwars script (V.V4)",
+    Callback = function()
+        Window:Dialog({
+            Title = "Vape V4",
+            Content = "Undetected and OP features",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+                        task.wait(1)
+                        print("Loaded Vape V4")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Escape Papa's Pizzaria",
+    Name = "Escape Papa's Pizzaria",
+    Description = "Get all items/gamepass",
+    Callback = function()
+        for _,v in pairs(game:GetDescendants()) do
+            if v.ClassName == "RemoteEvent" then
+            if v.Parent.Name == "WeaponsRemotes" or v.Parent.Name == "VipRemotes" or v.Parent.Name == "Remotes" then
+            v:FireServer()
+            end
+            end
+            end
+        task.wait()
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Pet's Go",
+    Name = "Pet's Go",
+    Description = "One of the best scripts for Pet's Go",
+    Callback = function()
+        Window:Dialog({
+            Title = "AtherHub",
+            Content = "Unfortunately not supported on Solara",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2529a5f9dfddd5523ca4e22f21cceffa.lua"))()
+                        print("Loaded AtherHub")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "Dress To Impress",
+    Name = "Dress To Impress",
+    Description = "DTI fucker GUI",
+    Callback = function()
+        Window:Dialog({
+            Title = "Dress To Impress",
+            Content = "Extremely op, includes troll features",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/DTI-GUI-V2/main/dti_gui_v2.lua",true))()
+                        print("Loaded DTI fucker GUI")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled")
+                    end
+                }
+            }
+        })
+    end
+})
+
+Tabs.Game_Scripts:AddButton({
+    Title = "",
+    Name = "",
+    Description = "",
+    Callback = function()
+        Window:Dialog({
+            Title = "",
+            Content = "",
+            Buttons = {
+                {
+                    Title = "Load script",
+                    Callback = function()
+                        
+                        print("Loaded ")
                     end
                 },
                 {
