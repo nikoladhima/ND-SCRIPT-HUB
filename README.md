@@ -17,7 +17,7 @@
 - Updated some scripts
 - Bug Fixes
 - ↓↓ New game scripts added ↓↓
-- Bedwars, Escape Papa's Pizzaria, Pet's go, Dress To Impress, Arsenal, Build a boat for treasure, Fling Things And People, Funky Friday, Combat Warriors, Adopt Me
+- Bedwars, Escape Papa's Pizzaria, Pet's go, Dress To Impress, Arsenal, Build a boat for treasure, Fling Things And People, Funky Friday, Combat Warriors, Adopt Me.
 
 ## 🔌Shortened Script
 ```lua
