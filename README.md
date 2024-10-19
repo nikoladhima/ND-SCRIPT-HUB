@@ -12,12 +12,11 @@
 - Anti-Virus ⚠️
 - Extras 👀
 
-## Patch Notes (Script V.1.2.2)
+## Patch Notes (Script V.1.2.3)
 
 - Updated some scripts
 - Bug Fixes
-- ↓↓ New game scripts added ↓↓
-- Bedwars, Escape Papa's Pizzaria, Pet's go, Dress To Impress, Arsenal, Build a boat for treasure, Fling Things And People, Funky Friday, Combat Warriors, Adopt Me.
+- Added Hitbox Expander (with extra features) to Universal Scripts Tab
 
 ## 🔌Shortened Script
 ```lua
