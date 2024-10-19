@@ -13,7 +13,7 @@
 - Extras 👀
 
 ## Patch Notes (Script V.1.2.3)
-
+(Small update, Big update very soon)
 - Updated some scripts
 - Bug Fixes
 - Added Hitbox Expander (with extra features) to Universal Scripts Tab
