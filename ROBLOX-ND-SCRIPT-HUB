@@ -1,3 +1,4 @@
+local CoreGui = game:GetService("StarterGui")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/refs/heads/master/main.lua"))()
@@ -5,7 +6,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/n
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "ND ScriptHub‎ V.1.2.2", --..Fluent.Version,
+    Title = "ND ScriptHub‎ V.1.2.3", --..Fluent.Version,
     SubTitle = "by Nikoleto Scripts ||| https://github.com/nikoladhima",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -19,6 +20,7 @@ local Tabs = {
     Game_Scripts = Window:AddTab({ Title = "Game Scripts", Icon = "rbxassetid://83262328821985" }),
     Admin_Scripts = Window:AddTab({ Title = "Admin Scripts", Icon = "rbxassetid://83262328821985" }),
     Universal_Scripts = Window:AddTab({ Title = "Universal Scripts", Icon = "rbxassetid://83262328821985"}),
+    --FE_Scripts = Window:AddTab({ Title = "FE Scripts", Icon = "rbxassetid://83262328821985"}),
     Anti_Virus = Window:AddTab({ Title = "Anti Virus", Icon = "rbxassetid://119124462913986" }),
     Extras = Window:AddTab({ Title = "Extras", Icon = "rbxassetid://97974676819697"}),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
@@ -29,13 +31,9 @@ local Options = Fluent.Options
     Fluent:Notify({
         Title = "IMPORTANT NOTE",
         Content = "If you find any bugs or have issues with the script then contact me on discord: normalnikola",
-        --Content = "Please use the Anti-Virus before executing any scripts to prevent scripts from stealing your info",
-        SubContent = "", -- Optional
+        SubContent = "Script Version : V.1.2.3", -- Optional
         Duration = 10 -- Set to nil to make the notification not disappear
     })
-        
-
-
 
     --[[Tabs.Game_Scripts:AddParagraph({
        Title = "Game scripts (still in development)",
@@ -789,6 +787,16 @@ Tabs.Universal_Scripts:AddButton({
     end
 })
 
+Tabs.Universal_Scripts:AddButton({
+    Title = "Hitbox Expander",
+    Name = "Hitbox Expander",
+    Description = "OP hitbox expander with some extra useful features",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nikoladhima/ignore/refs/heads/main/ignore"))()
+        print("Loaded Hitbox Expander")
+    end
+})
+
     --[[local Toggle = Tabs.Game_Scripts:AddToggle("MyToggle", {Title = "Toggle", Default = false })
 
     Toggle:OnChanged(function()
@@ -954,6 +962,7 @@ Tabs.Universal_Scripts:AddButton({
                 end
         end
     })
+
 
     --[[Input:OnChanged(function()
         print("Input updated:", Input.Value)
