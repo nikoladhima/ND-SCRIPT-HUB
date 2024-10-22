@@ -1,8 +1,6 @@
 ## Script Thumbnail
 <img src="Assets/Screenshot_15.png" alt="ND Script Hub">
 
-## NOTE: THIS SCRIPT HUB IS STILL IN DEVELOPMENT SO IT DOESN'T HAVE MANY SCRIPTS YET!
-
 ## ⚡ Features
 
 - Game Scripts 📜
@@ -12,11 +10,12 @@
 - Anti-Virus ⚠️
 - Extras 👀
 
-## Patch Notes (Script V.1.2.3)
-(Small update, Big update very soon)
+## Patch Notes (Script V.1.2.4)
+
 - Updated some scripts
 - Bug Fixes
-- Added Hitbox Expander (with extra features) to Universal Scripts Tab
+- added 9 more game scripts
+  **Aimblox, Flex Your Fps, Untitled Boxing Game, Horror RNG, Evade, Natural Disasters Survival, CounterBlox, Taxi Boss, Murderers VS Sheriffs**
 
 ## 🔌Shortened Script
 ```lua
